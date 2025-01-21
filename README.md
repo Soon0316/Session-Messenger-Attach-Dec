@@ -1,6 +1,14 @@
 # Session-Messenger-Attach-Dec
 Session 메신저(Desktop-Windows) 첨부 파일 복호화 도구
 
+## Installation
+**1. Node.js 설치** <br/> https://nodejs.org/ko/download  
+
+**2. "libsodium-wrappers" 라이브러리 설치**
+```
+npm install libsodium-wrappers
+```
+
 ## Usage
 **1. inputFilePath, outputFilePath, key 변수 수정** 
 ![alt text](usage.png)
@@ -8,12 +16,7 @@ Session 메신저(Desktop-Windows) 첨부 파일 복호화 도구
 - outputFilePath: 복호화된 첨부 파일 저장 경로
 - key: local_attachment_encrypted_key ('%APPDATA%\\Session\\sql\\db.sqlite' db 파일의 item 테이블 'local_attachment_encrypted_key' 값)
 
-**2. "libsodium-wrappers" 라이브러리 설치**
-```
-npm install libsodium-wrappers
-```
-
-**3. SessionAttachDec.js 실행**
+**2. SessionAttachDec.js 실행**
 ```
 node SessionAttachDec.js
 ```
