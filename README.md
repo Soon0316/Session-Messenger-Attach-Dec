@@ -24,3 +24,8 @@ node SessionAttachDec.js
 
 ## Result
 ![alt text](result.png)
+
+## Reference
+https://github.com/oxen-io/session-desktop  
+  
+https://doc.libsodium.org/secret-key_cryptography/secretstream
